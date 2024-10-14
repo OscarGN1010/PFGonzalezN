@@ -23,36 +23,34 @@
             height: auto;
         }
         &--section img {
-                @include img-carrusel;
+            @include img-carrusel;
+        }
+        &--section-text {
+            border-radius: 25px;
+            background-color: $color-secudario;
+            @include archivo-black;
+            color: $color-aux;
+            a {
+                text-decoration: none;
             }
-
-            &--section-text {
-                border-radius: 25px;
-                background-color: $color-secudario;
-                @include archivo-black;
+            &:hover {
+                background-color: $color-principal;
+            }
+            h3 {
                 color: $color-aux;
-                a {
-                    text-decoration: none;
-                }
-                &:hover {
-                    background-color: $color-principal;
-                }
-                h3 {
-                    color: $color-aux;
-                    font-size: 1.2rem
-                } 
-                h6 {
-                    color: $color-aux;
-                    display: none;
-                    font-size: 0.8rem;
-                }
-                p {
-                    @include roboto-ss;
-                    color: $color-aux;
-                    display: none;
-                    font-size: 0.8rem;
-                }
+                font-size: 1.2rem
+            } 
+            h6 {
+                color: $color-aux;
+                display: none;
+                font-size: 0.8rem;
             }
-        
+            p {
+                @include roboto-ss;
+                color: $color-aux;
+                display: none;
+                font-size: 0.8rem;
+            }
+        }
     }
 }

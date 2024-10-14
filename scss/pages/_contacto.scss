@@ -44,17 +44,32 @@
         &--dato-persona {
             display: inline-block;
             padding: 0px 20px 10px 0px;
-            input {
+            &-input {
                 display: block;
                 border: none;
                 border-radius: 5px;
                 background-color: #844b35;
             }
         }
-        &--mensaje textarea {
+        &--mensaje-textarea {
             width: 100%;
-            @extend .contacto__formulario--dato-persona;
+            @extend .contacto__formulario--dato-persona-input ;
+        }
+        &--botton {
+            padding-top: 15px;
+            text-align: right;
+            &:active {
+                background-color: #340D00;
+            }
+            input {
+                border-radius: 5px;
+                color: aliceblue;
+                background-color: #844b35;
+                padding: 5px;
+                &:active {
+                    background-color: hsl(15, 77%, 17%);
+                }
+            }
         }
     }
-    
 }

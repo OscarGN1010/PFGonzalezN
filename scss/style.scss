@@ -8,3 +8,15 @@
 
 // import contacto
 @import './pages/_contacto.scss';
+
+// import servicio
+@import './pages/_servicios.scss';
+
+// import contacto frecuente
+@import './pages/_preguntasF.scss';
+
+// estilos para tablet
+@import 'base/_mq-tablet.scss';
+
+// estilos para deskop
+@import 'base/_mq-desktop.scss';

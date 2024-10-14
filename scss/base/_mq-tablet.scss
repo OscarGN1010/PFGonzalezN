@@ -1,0 +1,45 @@
+// IMPORT VARIABLES 
+@import '../utilities/_variables.scss';
+
+// IMPORT tipografia
+@import '../base/tipografia';
+
+// IMPORT MIXIN 
+@import '../utilities/_mixin.scss';
+
+/* estilos de tablet */
+
+@media screen and (min-width: 600px) {
+
+    .section {
+        &__logo {
+            height: 131px;
+            width: 553px;
+        }
+        &__img-agencia--img {
+            height: 378px;
+            width: 553px;
+        }
+        &__collage {
+            height: auto;
+            width: 553px;
+        }
+    }
+
+    .contacto__formulario {
+        width: 540px;
+    }
+
+    .preguntas-f__preguntas {
+        width: 600px;
+    }
+
+    .servicios {
+        &__title {
+            font-size: 50px;
+        }
+        &__subtitle {
+            font-size: 40px;
+        }
+    }
+}

@@ -70,7 +70,7 @@
   bottom: 50px;
   right: 15px;
 }
-.section__wsp__img:hover {
+.section__wsp--img:hover {
   height: 60px;
   width: 60px;
 }
@@ -80,9 +80,13 @@
   font-style: normal;
 }
 .section__title {
+  padding-bottom: 50px;
+  text-align: center;
   color: #340D00;
   font-size: 35px;
-  padding-bottom: 20px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .section__img-agencia {
   padding-bottom: 40px;
@@ -148,7 +152,7 @@
   display: none;
 }
 .section__ubicacion {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .section__ubicacion--text {
   padding-bottom: 1rem;
@@ -223,18 +227,183 @@
   font-style: normal;
   text-align: center;
 }
-.contacto__formulario--dato-persona, .contacto__formulario--mensaje textarea {
+.contacto__formulario--dato-persona {
   display: inline-block;
   padding: 0px 20px 10px 0px;
 }
-.contacto__formulario--dato-persona input, .contacto__formulario--mensaje textarea input {
+.contacto__formulario--dato-persona-input, .contacto__formulario--mensaje-textarea {
   display: block;
   border: none;
   border-radius: 5px;
   background-color: #844b35;
 }
-.contacto__formulario--mensaje textarea {
+.contacto__formulario--mensaje-textarea {
   width: 100%;
+}
+.contacto__formulario--botton {
+  padding-top: 15px;
+  text-align: right;
+}
+.contacto__formulario--botton:active {
+  background-color: #340D00;
+}
+.contacto__formulario--botton input {
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: #844b35;
+  padding: 5px;
+}
+.contacto__formulario--botton input:active {
+  background-color: hsl(15, 77%, 17%);
+}
+
+/* PAGINA SERVICIOS */
+/* tarjetas de los servicios */
+.servicios {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.servicios__title {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #601C00;
+}
+.servicios__subtitle {
+  padding: 15px 0px;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #844B35;
+}
+.servicios__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}
+.servicios__cards--card {
+  margin-bottom: 15px;
+  border: rgba(0, 0, 0, 0.252) 1px solid;
+  border-radius: 10px;
+  width: 250px;
+}
+.servicios__cards--img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.servicios__cards--text {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #844B35;
+  padding: 10px;
+}
+.servicios__cards--text h4 {
+  font-size: 30px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #601C00;
+}
+
+/* PAGINA PREGUNTA FRECUENTE */
+.preguntas-f {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.preguntas-f__img {
+  width: 100%;
+  height: 300px;
+}
+.preguntas-f__img--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.preguntas-f__title {
+  padding-top: 30px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.preguntas-f__preguntas {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.preguntas-f__preguntas--pregunta {
+  font-family: "Lilita One", sans-serif;
+  color: #391306;
+}
+.preguntas-f__preguntas--text {
+  color: hsl(17, 39%, 26%);
+}
+
+/* estilos de tablet */
+@media screen and (min-width: 600px) {
+  .section__logo {
+    height: 131px;
+    width: 553px;
+  }
+  .section__img-agencia--img {
+    height: 378px;
+    width: 553px;
+  }
+  .section__collage {
+    height: auto;
+    width: 553px;
+  }
+  .contacto__formulario {
+    width: 540px;
+  }
+  .preguntas-f__preguntas {
+    width: 600px;
+  }
+  .servicios__title {
+    font-size: 50px;
+  }
+  .servicios__subtitle {
+    font-size: 40px;
+  }
+}
+/*  estilo desktop */
+@media screen and (min-width: 1024px) {
+  .inicio__carrusel--section-text p, .inicio__carrusel--section-text h6 {
+    display: block;
+  }
+  .section__title {
+    font-size: 45px;
+  }
+  .section__contacto--subcontenedor {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .section__collage {
+    width: 977px;
+    height: 750px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 170px);
+    grid-template-areas: "uno dos tres" "cuatro dos tres" "cuatro cinco tres" "seis seis seis";
+  }
+  .section__collage--img {
+    height: 100%;
+    width: 100%;
+  }
+  .section__collage-seis {
+    display: block;
+  }
+  .section__contacto--text {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

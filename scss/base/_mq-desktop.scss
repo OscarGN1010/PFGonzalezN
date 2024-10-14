@@ -1,0 +1,48 @@
+// IMPORT VARIABLES 
+@import '../utilities/_variables.scss';
+
+// IMPORT tipografia
+@import '../base/tipografia';
+
+// IMPORT MIXIN 
+@import '../utilities/_mixin.scss';
+
+
+/*  estilo desktop */
+
+@media screen and (min-width:1024px){
+    .inicio__carrusel--section-text p ,.inicio__carrusel--section-text h6 {
+        display: block;
+    }
+
+    .section {
+        &__title {
+            font-size: 45px;
+        }
+        &__contacto--subcontenedor {
+            flex-direction: row;
+            justify-content: center;
+        }
+        &__collage {
+            width: 977px;
+            height: 750px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 170px);
+            grid-template-areas:         
+            "uno dos tres"
+            "cuatro dos tres"
+            "cuatro cinco tres"
+            "seis seis seis";
+            &--img {
+                height: 100%;
+                width: 100%;
+            }
+            &-seis {
+                display: block;
+            }
+        }
+        &__contacto--text {
+            font-size: 30px;
+        }
+    }
+}
