@@ -1,0 +1,60 @@
+// IMPORT VARIABLES 
+@import '../utilities/_variables.scss';
+
+// IMPORT tipografia
+@import '../base/tipografia';
+
+// IMPORT MIXIN 
+@import '../utilities/_mixin.scss';
+
+
+
+.contacto {
+    @include flex-colum;
+    height: auto;
+    &__img {
+        width: 100%;
+        height: 250px;
+        &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+        }
+    }
+
+    &__formulario {
+        border-radius: 15px;
+        margin: 30px;
+        padding: 20px;
+        background-color: #391306;
+        color: aliceblue;
+        &--container {
+            width:auto;
+        }
+        &--position {
+            position: relative;
+            bottom: 100px;
+        }
+        &--title {
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+        }
+        &--dato-persona {
+            display: inline-block;
+            padding: 0px 20px 10px 0px;
+            input {
+                display: block;
+                border: none;
+                border-radius: 5px;
+                background-color: #844b35;
+            }
+        }
+        &--mensaje textarea {
+            width: 100%;
+            @extend .contacto__formulario--dato-persona;
+        }
+    }
+    
+}

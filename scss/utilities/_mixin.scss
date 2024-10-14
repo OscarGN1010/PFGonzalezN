@@ -1,0 +1,13 @@
+// MIXIN FLEX
+
+@mixin flex-colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin img-carrusel {
+    overflow: hidden;
+    height: 300px; /* Ajusta la altura según tu necesidad */
+    object-fit: cover; /* Mantiene las proporciones y cubre toda el área */
+}

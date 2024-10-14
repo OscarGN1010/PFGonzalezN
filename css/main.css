@@ -1,0 +1,240 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* main index*/
+/*carrusel*/
+.inicio {
+  height: auto;
+}
+.inicio__carrusel {
+  height: auto;
+}
+.inicio__carrusel .carrusel__content {
+  height: auto;
+}
+.inicio__carrusel--section img {
+  overflow: hidden;
+  height: 300px; /* Ajusta la altura según tu necesidad */
+  object-fit: cover; /* Mantiene las proporciones y cubre toda el área */
+}
+.inicio__carrusel--section-text {
+  border-radius: 25px;
+  background-color: #844b35;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+}
+.inicio__carrusel--section-text a {
+  text-decoration: none;
+}
+.inicio__carrusel--section-text:hover {
+  background-color: #340D00;
+}
+.inicio__carrusel--section-text h3 {
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+.inicio__carrusel--section-text h6 {
+  color: aliceblue;
+  display: none;
+  font-size: 0.8rem;
+}
+.inicio__carrusel--section-text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: aliceblue;
+  display: none;
+  font-size: 0.8rem;
+}
+
+/* estilo de section conocenos */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 15px;
+  justify-content: center;
+  text-align: center;
+  /* estilo de section presentacion empresa */
+}
+.section__wsp {
+  /* estilo de section whatsapp contacto flotante*/
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+}
+.section__wsp__img:hover {
+  height: 60px;
+  width: 60px;
+}
+.section--font-text {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.section__title {
+  color: #340D00;
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.section__img-agencia {
+  padding-bottom: 40px;
+}
+.section__img-agencia--img {
+  width: 80%;
+  border-radius: 20px;
+}
+.section__contacto, .section__contacto--subcontenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__contacto--text {
+  color: #844B35;
+  width: 80%;
+  font-size: 20px;
+}
+.section__contacto--img {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.section__contacto--img-position {
+  position: relative;
+  top: 25px;
+}
+.section__collage {
+  /* estilo de section collage de fotos de empresa*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "uno uno dos" "uno uno cinco" "tres cuatro cuatro" "tres cuatro cuatro";
+  gap: 10px;
+}
+.section__collage--img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.section__collage--img-uno {
+  grid-area: uno;
+}
+.section__collage--img-dos {
+  grid-area: dos;
+}
+.section__collage--img-tres {
+  grid-area: tres;
+}
+.section__collage--img-cuatro {
+  grid-area: cuatro;
+}
+.section__collage--img-cinco {
+  grid-area: cinco;
+}
+.section__collage--img-seis {
+  grid-area: seis;
+  display: none;
+}
+.section__ubicacion {
+  padding-top: 70px;
+}
+.section__ubicacion--text {
+  padding-bottom: 1rem;
+  color: #391306;
+  font-size: 2rem;
+}
+
+/* estilos de footer */
+.footer {
+  text-align: left;
+  background-color: #340D00;
+  padding: 15px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.footer__container {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: aliceblue;
+}
+.footer__container--title {
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+.footer__container--text li a {
+  text-decoration: none;
+  color: azure;
+  font-size: 20px;
+}
+
+.derechos {
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.contacto__img {
+  width: 100%;
+  height: 250px;
+}
+.contacto__img--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contacto__formulario {
+  border-radius: 15px;
+  margin: 30px;
+  padding: 20px;
+  background-color: #391306;
+  color: aliceblue;
+}
+.contacto__formulario--container {
+  width: auto;
+}
+.contacto__formulario--position {
+  position: relative;
+  bottom: 100px;
+}
+.contacto__formulario--title {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.contacto__formulario--dato-persona, .contacto__formulario--mensaje textarea {
+  display: inline-block;
+  padding: 0px 20px 10px 0px;
+}
+.contacto__formulario--dato-persona input, .contacto__formulario--mensaje textarea input {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  background-color: #844b35;
+}
+.contacto__formulario--mensaje textarea {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

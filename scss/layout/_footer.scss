@@ -1,0 +1,44 @@
+// IMPORT VARIABLES 
+@import '../utilities/_variables.scss';
+
+// IMPORT tipografia
+@import '../base/tipografia';
+
+// IMPORT MIXIN 
+@import '../utilities/_mixin.scss';
+
+// IMPORT LIST
+@import '../utilities/_listas.scss';
+
+
+/* estilos de footer */
+.footer {
+    text-align: left;
+    background-color: #340D00;
+    padding: 15px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    &__container {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        color: aliceblue;
+        &--title{
+            padding-bottom: 15px;
+            font-size: 30px;
+        }
+        &--text li a {
+            text-decoration: none;
+            color: azure;
+            font-size: 20px;
+        }
+    }
+}
+
+.derechos {
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
