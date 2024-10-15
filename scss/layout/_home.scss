@@ -26,15 +26,21 @@
             @include img-carrusel;
         }
         &--section-text {
-            border-radius: 25px;
-            background-color: $color-secudario;
+            text-align: center;
+            padding: 100px 30px;
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            bottom: 0px;
+            background-image: linear-gradient(to top, $color-principal 20%, transparent );
             @include archivo-black;
             color: $color-aux;
             a {
+                padding: 100px;
                 text-decoration: none;
             }
             &:hover {
-                background-color: $color-principal;
+                background-image: linear-gradient(to top, $color-principal 40%, transparent );
             }
             h3 {
                 color: $color-aux;

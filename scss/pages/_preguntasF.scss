@@ -31,13 +31,14 @@
         text-align: center;
     }
     &__preguntas {
-        padding: 50px;
+        padding: 25px;
         display: flex;
         flex-direction: column;
         gap: 25px;
         &--pregunta {
             font-family: "Lilita One", sans-serif;
             color: #391306;
+            width: 100%;
         }
         &--text {
             color: hsl(17, 39%, 26%);
