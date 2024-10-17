@@ -136,7 +136,6 @@
 .section__collage--img {
   height: 100%;
   width: 100%;
-  overflow: hidden;
   border-radius: 20px;
   max-width: 100%;
   max-height: 100%;
@@ -305,13 +304,15 @@
 .servicios__cards--img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
+  height: 150px;
+  object-fit: cover;
 }
 .servicios__cards--text {
   font-family: "New Amsterdam", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #844B35;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
 }
 .servicios__cards--text h4 {
   font-size: 30px;
@@ -319,6 +320,28 @@
   font-weight: 400;
   font-style: normal;
   color: #601C00;
+}
+.servicios__cards--text p {
+  margin-bottom: 0px;
+}
+.servicios__cards--boton {
+  padding: 10px;
+}
+.servicios__cards--boton-info {
+  text-decoration: none;
+  background-color: rgba(132, 75, 53, 0.4470588235);
+  color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+}
+.servicios__cards--boton-reserva {
+  margin-left: 25px;
+  text-decoration: none;
+  background-color: #601C00;
+  color: aliceblue;
+  padding: 5px;
+  border: black 1px solid;
+  border-radius: 5px;
 }
 
 /* PAGINA PREGUNTA FRECUENTE */
@@ -403,11 +426,7 @@
     height: 750px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 170px);
-    grid-template-areas: 
-    "uno dos tres" 
-    "cuatro dos tres" 
-    "cuatro cinco tres" 
-    "seis seis seis";
+    grid-template-areas: "uno dos tres" "cuatro dos tres" "cuatro cinco tres" "seis seis seis";
   }
   .section__collage--img {
     height: 100%;

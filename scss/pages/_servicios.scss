@@ -43,19 +43,42 @@
         &--img {
             width: 100%;
             border-radius: 10px 10px 0px 0px;
+            height: 150px;
+            object-fit: cover;
         }
         &--text{
             font-family:  "New Amsterdam", sans-serif;
             font-weight: 400;
             font-style: normal;
             color: #844B35;
-            padding: 10px;
+            padding: 10px 10px 0px 10px;
             h4 {
                 font-size: 30px;
                 @include lilita-one;
                 color: #601C00;
             }
+            p{
+                margin-bottom: 0px;
+            }
         }
-        
+        &--boton {
+            padding: 10px;
+            &-info {
+                text-decoration: none;
+                background-color:#844b3572;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            &-reserva {
+                margin-left: 25px;
+                text-decoration: none;
+                background-color: #601C00;
+                color: aliceblue;
+                padding: 5px;
+                border: black 1px solid;
+                border-radius: 5px;
+            }
+        }
     }
 }
