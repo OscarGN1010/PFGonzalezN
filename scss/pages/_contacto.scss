@@ -6,7 +6,10 @@
 
 // IMPORT MIXIN 
 @import '../utilities/_mixin.scss';
-
+// IMPORT BOTONES
+@import '../components/buttons';
+// IMPORT BOTONES
+@import '../layout/forms';
 
 
 .contacto {
@@ -23,11 +26,7 @@
     }
 
     &__formulario {
-        border-radius: 15px;
-        margin: 30px;
-        padding: 20px;
-        background-color: #391306;
-        color: aliceblue;
+        @include formulario_contacto-contenedor;
         &--container {
             width:auto;
         }
@@ -36,10 +35,7 @@
             bottom: 100px;
         }
         &--title {
-            font-family: "Lilita One", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            text-align: center;
+            @include lilita-one;
         }
         &--dato-persona {
             display: inline-block;
@@ -48,7 +44,7 @@
                 display: block;
                 border: none;
                 border-radius: 5px;
-                background-color: #844b35;
+                background-color: $color-secudario;
             }
         }
         &--mensaje-textarea {
@@ -56,20 +52,7 @@
             @extend .contacto__formulario--dato-persona-input ;
         }
         &--botton {
-            padding-top: 15px;
-            text-align: right;
-            &:active {
-                background-color: #340D00;
-            }
-            input {
-                border-radius: 5px;
-                color: aliceblue;
-                background-color: #844b35;
-                padding: 5px;
-                &:active {
-                    background-color: hsl(15, 77%, 17%);
-                }
-            }
+            @include boton_contacto
         }
     }
 }

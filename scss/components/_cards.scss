@@ -1,0 +1,45 @@
+// IMPORT VARIABLES 
+@import '../utilities/_variables.scss';
+
+// IMPORT tipografia
+@import '../base/tipografia';
+
+// IMPORT MIXIN 
+@import '../utilities/_mixin.scss';
+// IMPORT boton card
+@import './buttons';
+
+
+@mixin cards {
+    @include flex-row-wrap;
+    width: 100%;
+    gap: 15px;
+    &--card {
+        margin-bottom: 15px ;
+        border: rgba(0, 0, 0, 0.252) 1px solid;
+        border-radius: 10px ;
+        width: 250px;
+    }
+    &--img {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        height: 150px;
+        object-fit: cover;
+    }
+    &--text{
+        @include new-amsterdam;
+        color: $color-secudario;
+        padding: 10px 10px 0px 10px;
+        h4 {
+            font-size: 30px;
+            @include lilita-one;
+            color: #601C00;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+    }
+    &--boton {
+        @include botones_cads;
+    }
+}

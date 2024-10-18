@@ -1,0 +1,36 @@
+@mixin boton_contacto {
+    padding-top: 15px;
+            text-align: right;
+            &:active {
+                background-color: $color-principal;
+            }
+            input {
+                border-radius: 5px;
+                color: $color-aux;
+                background-color: $color-secudario;
+                padding: 5px;
+                &:active {
+                    background-color: hsl(15, 77%, 17%);
+                }
+            }
+}
+
+@mixin botones_cads {
+    padding: 10px;
+        &-info {
+            text-decoration: none;
+            background-color:#844b3572;
+            color:$color-aux;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        &-reserva {
+            margin-left: 25px;
+            text-decoration: none;
+            background-color: #601C00;
+            color: $color-aux;
+            padding: 5px;
+            border: black 1px solid;
+            border-radius: 5px;
+        }
+}

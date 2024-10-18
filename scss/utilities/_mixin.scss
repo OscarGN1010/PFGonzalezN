@@ -6,6 +6,12 @@
     align-items: center;
 }
 
+@mixin flex-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 @mixin img-carrusel {
     overflow: hidden;
     height: 300px; /* Ajusta la altura según tu necesidad */

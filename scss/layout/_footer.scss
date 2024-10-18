@@ -14,23 +14,21 @@
 /* estilos de footer */
 .footer {
     text-align: left;
-    background-color: #340D00;
+    background-color: $color-principal;
     padding: 15px;
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
     &__container {
-        font-family: "Roboto", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        color: aliceblue;
+        @include roboto-ss;
+        color: $color-aux;
         &--title{
             padding-bottom: 15px;
             font-size: 30px;
         }
         &--text li a {
             text-decoration: none;
-            color: azure;
+            color: $color-aux;
             font-size: 20px;
         }
     }
@@ -39,6 +37,6 @@
 .derechos {
     width: 100%;
     background-color: black;
-    color: whitesmoke;
+    color: $color-aux;
     text-align: center;
 }
